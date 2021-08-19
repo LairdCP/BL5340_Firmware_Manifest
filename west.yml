@@ -10,7 +10,7 @@ manifest:
   projects:
     - name: BL5340_EdgeImpulse_Vibration_Demo
       path: sample_apps_bl5340/vib_run_demo
-      revision: 296afbd27ef1d1740119e56cf89af45d87e4c427
+      revision: f34b4db5c89a612169de347fb8d1ed6ba6ca3356
       remote: LairdCP
     - name: BLE_Gateway_Firmware
       revision: fdc79985906957ee15a380dc5bbab2445dc07d7a
