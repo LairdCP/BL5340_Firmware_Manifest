@@ -45,4 +45,4 @@ If using Linux, v0.13.0 of the Zephyr SDK is recommended.
 
 ## Building the Firmware
 
-See [here for build commands](https://github.com/LairdCP/BLE_Gateway_Firmware/blob/main/docs/readme_ltem_aws.md#building-the-firmware).
+See [here for build commands](https://github.com/LairdCP/BLE_Gateway_Firmware/blob/main/docs/readme_aws.md#building-the-firmware).
