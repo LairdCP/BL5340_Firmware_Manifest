@@ -1,0 +1,94 @@
+manifest:
+  remotes:
+    - name: JsmnRepo
+      url-base: https://github.com/zserge
+    - name: LairdCP
+      url-base: https://github.com/LairdCP
+
+  # Please add items below based on alphabetical order.
+  # These dependencies may need updating if new features are added to the firmware.
+  projects:
+    - name: BL5340_EdgeImpulse_Vibration_Demo
+      path: sample_apps_bl5340/vib_run_demo
+      revision: 296afbd27ef1d1740119e56cf89af45d87e4c427
+      remote: LairdCP
+    - name: BLE_Gateway_Firmware
+      revision: fdc79985906957ee15a380dc5bbab2445dc07d7a
+      remote: LairdCP
+    - name: zephyr_framework
+      path: modules/framework
+      revision: f7a5a53a84672f7ff81a845fda45600c3cd9343d
+      remote: LairdCP
+    - name: jsmn
+      path: modules/jsmn
+      revision: 053d3cd29200edb1bfd181d917d140c16c1f8834
+      remote: JsmnRepo
+    - name: sdk-nrf
+      path: nrf
+      revision: 445d68e113152c806c2cfeecebec706bd9f339ee
+      remote: LairdCP
+      import:
+        # Please keep this list sorted alphabetically.
+        name-blocklist:
+          - Alexa-Gadgets-Embedded-Sample-Code
+          - canopennode
+          - civetweb
+          - connectedhomeip
+          - find-my
+          - hal_st
+          - homekit
+          - loramac-node
+          - matter
+          - mbed-cloud-client
+          - memfault-firmware-sdk
+          - openthread
+    - name: BL5340_Sample_Apps
+      path: sample_apps_bl5340
+      revision: 85ff285080080901b2ecfa549e29baf086645d02
+      remote: LairdCP
+    - name: Common_Sample_Apps
+      path: sample_apps_common
+      revision: b8dc561d55b42d33786171f6e630163369215efe
+      remote: LairdCP
+    - name: zephyr
+      revision: 8258e81e02db53a1c69a0ef0c03b1de3d287b107
+      remote: LairdCP
+      import:
+        # In addition to the zephyr repository itself, NCS also
+        # imports the contents of zephyr/west.yml.
+        # Only the projects explicitly named in the
+        # following whitelist are imported.
+        #
+        # Note that the zephyr west extensions (like 'build', 'flash',
+        # 'debug', etc.) are automatically provided by this import, so
+        # there's no need to add a redundant west-commands: key for
+        # the zephyr project.
+        #
+        # Please keep this list sorted alphabetically.
+        name-allowlist:
+          - cmsis
+          - fatfs
+          - libmetal
+          - littlefs
+          - lvgl
+          - hal_nordic
+          - mbedtls
+          - mcumgr
+          - mipi-sys-t
+          - net-tools
+          - nrf_hw_models
+          - open-amp
+          - segger
+          - tinycbor
+          - tinycrypt
+    - name: zephyr_boards
+      path: boards/arm
+      revision: 14986283b5012d9503dc7ffdfb0d5f25394f541c
+      remote: LairdCP
+    - name: zephyr_lib
+      path: modules/zephyr_lib
+      revision: 352f1a9b1d992c3333c760b15af50108275ba231
+      remote: LairdCP
+
+  self:
+    path: bl5340_firmware_manifest
