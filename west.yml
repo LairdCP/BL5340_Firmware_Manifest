@@ -13,7 +13,7 @@ manifest:
       revision: f34b4db5c89a612169de347fb8d1ed6ba6ca3356
       remote: LairdCP
     - name: BLE_Gateway_Firmware
-      revision: fdc79985906957ee15a380dc5bbab2445dc07d7a
+      revision: 0409d525e0a007291d21867c3a1c81d660483ca7
       remote: LairdCP
     - name: zephyr_framework
       path: modules/framework
@@ -44,7 +44,7 @@ manifest:
           - openthread
     - name: BL5340_Sample_Apps
       path: sample_apps_bl5340
-      revision: 85ff285080080901b2ecfa549e29baf086645d02
+      revision: 0ae16f76bf42233cd11f6e4f67f5096a5207acd8
       remote: LairdCP
     - name: Common_Sample_Apps
       path: sample_apps_common
